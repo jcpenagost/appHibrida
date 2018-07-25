@@ -18,11 +18,17 @@ page-hello-ionic {
     }
 
     .Encabezado{
-        width: 100%;
+        width: 96%;
         height: 10%;
-        position: s;
+        position: relative;
+        float: left;
         background-color:$fondoClaro;
         color: $letras1;
+        margin: 3px;
+        left: 2px;  
+        border-style:  solid;
+        border-color: $borde1;
+        border-width: 2px;
     }
 
     .Opc{
@@ -34,6 +40,7 @@ page-hello-ionic {
         border-radius: 5%;
         border-style:  solid;
         border-color: $borde1;
+        border-width: 2px;
         margin: 3px;
         left: 2px;  
         top: 4px;
