@@ -1,0 +1,65 @@
+<!--
+  Generated template for the RegistratePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Regístrate</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-label class="letratitulo"> Regístrate con tu identificación y <br>correo electrónico </ion-label>
+    <ion-list>
+      <ion-item>
+        <ion-label floating Gaming> Tipo Documento </ion-label>
+        <ion-select [(ngModel)]="tipide" interface="popover">
+          <ion-option value="CC">Cédula Ciudadanía</ion-option>
+          <ion-option value="TI">Tarjeta Identidad</ion-option>
+          <ion-option value="PA">Pasaporte</ion-option>
+          <ion-option value="CE">Cédula Extranjería</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating> Número Documento </ion-label>
+        <ion-input type="text" [(ngModel)]="numide"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating> Correo electrónico </ion-label>
+        <ion-input type="text" [(ngModel)]="correo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating> Contraseña </ion-label>
+        <ion-input type="password" [(ngModel)]="password">  </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating> Confirma contraseña </ion-label>
+        <ion-input type="password" [(ngModel)]="confimpassword">  </ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-list no-lines>
+      <ion-item class="itemLink">
+       <p>
+        <label class="letraTexto"> Al hacer clic en Registrarse, acepta los </label>
+        <label class="letraLink"  > <br>términos y condiciones</label>
+        <label class="letraTexto">y la</label>
+        <label class="letraLink"  ><br>política de privacidad.</label>
+        </p>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button block > Registrarse </button>
+      </ion-item>
+      <ion-item class="itemLink">
+        <label class="letraTexto"> ¿Ya tienes una cuenta? </label>
+        <label class="letraLink" (click)="login()"  > Iniciar Sesión </label>
+      </ion-item>
+    </ion-list>
+  
+</ion-content>

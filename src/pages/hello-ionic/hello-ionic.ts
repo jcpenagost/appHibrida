@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { ListPage} from '../list/list';
+
+import { ListPage } from '../list/list';
 
 @Component({
   selector: 'page-hello-ionic',
@@ -16,7 +17,6 @@ export class HelloIonicPage {
   constructor(
     private navctrl:NavController,
     private navparams:NavParams) {
-
   }
 
   irPagina(pagina){

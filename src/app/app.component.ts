@@ -1,10 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
+import { Platform, MenuController, Nav, NavParams } from 'ionic-angular';
 
-import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
+import {LoginPage} from '../pages/login/login';
+import {RegistratePage} from '../pages/registrate/registrate';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,7 +27,8 @@ export class MyApp {
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public splashScreen: SplashScreen,
+    public NavParams: NavParams
   ) {
     this.initializeApp();
 
